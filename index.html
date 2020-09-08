@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home page</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="final/fontawesome-free-5.12.0-web/css/all.min.css">
+</head>
+<body>
+	<div class="sidebar">
+		<div class="status">
+			<h3 class="name">admin</h3>
+			<button class="sidebar-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+        
+		<div class="info">
+			<div class="person-img">
+				<img src="img/me.jpg" alt="admin" class="img">
+			</div>
+			<div class="person-name">
+				<h3 class="name">john</h3>
+			</div>
+			<div class="person-work">
+				<h4 class="work">admin at SMSS</h4>
+			</div>
+			<div class="down">
+				<ul>
+					<li><a class="tooltips" href="index.html"><span>Profile</span><i class="fas fa-user"></i></a></li>
+                    <li><a class="tooltips" href="index.html"><span>Settings</span><i class="fas fa-cog"></i></a></li>
+                    <li><a class="tooltips" href="logouts.php"><span>Log out</span><i class="fas fa-power-off"></i></a></li>
+				</ul>
+			</div>
+        </div>
+        <div class="menu">
+                <ul id="menu">
+                    <li><a href="home.php"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+                    <li id="menu-panel"><a href="#"><i class="fa fa-user"></i> <span>Students</span> <span
+                                class="fa fa-angle-right" style="float: right"></span></a>
+                        <ul id="menu-panel-sub">
+                            <li id="menu-panel-li"><a href="home.php?ravi=student-information">Students
+                                    Information</a></li>
+                            <li id="menu-panel-boletim"><a href="home.php?ravi=add-student">Add Students</a></li>
+                            <li id="menu-panel-li"><a href="calender.html">Delete Students</a></li>
+
+                        </ul>
+                    </li>
+                    <li id="menu-panel"><a href="#"><i class="fa fa-database"></i> <span>Database</span> <span
+                                class="fa fa-angle-right" style="float: right"></span></a>
+                        <ul id="menu-panel-sub">
+                            <li id="menu-panel-li"><a href="home.php?ravi=student-information">Database
+                                    Information</a></li>
+                            <li id="menu-panel-boletim"><a href="home.php?smss=add-table">Add Database</a></li>
+                            <li id="menu-panel-li"><a href="calender.html">Edit Database</a></li>
+                            <li id="menu-panel-li"><a href="calender.html">Delete Database</a></li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-panel"><a href="#"><i class="fa fa-chalkboard-teacher"></i> <span>Teacher</span> <span
+                                class="fa fa-angle-right" style="float: right"></span></a>
+
+                        <ul id="menu-panel-sub">
+                            <li id="menu-panel-li"><a href="home.php?ravi=teacher-information">Teacher
+                                    Information</a></li>
+                            <li id="menu-panel-li"><a href="home.php?ravi=teacher-edit">Edit Teacher</a>
+                            </li>
+                            <li id="menu-panel-boletim"><a href="home.php?ravi=teacher-add">Add Teacher</a></li>
+                            <li id="menu-panel-li"><a href="home.php?ravi=teacher-delete">Delete Teacher</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li id="menu-panel"><a href="#"><i class="fa fa-female"></i> <span>Parents</span> <span
+                                class="fa fa-angle-right" style="float: right"></span></a>
+                        <ul id="menu-panel-sub">
+                            <li id="menu-panel-li"><a href="tabs.html">Parents Information</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-panel"><a href="#"><i class="fa fa-cog"></i> <span>Settings</span> <span
+                                class="fa fa-angle-right" style="float: right"></span></a>
+                        <ul id="menu-panel-sub">
+                            <li id="menu-panel-li"><a href="home.php?ravi=general-information">General
+                                    Information</a></li>
+                            <li id="menu-panel-li"><a href="home.php?ravi=edit-general-information">Edit
+                                    General Information</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- sidebar end -->
+
+	<div class="container">
+        <!-- header start -->
+		<div class="header">
+            <div class="welcome">
+                <h3 class="name">welcome <span>john</span></h3>
+            </div>
+            <div class="section">
+                <ul>
+                    <li><i class="fas fa-info-circle"></i><a href="#section-1" class="anchor">information</a></li>
+                    <li><i class="fas fa-chart-pie"></i><a href="#section-2" class="anchor">analysis</a></li>
+                    <li><i class="fas fa-briefcase"></i><a href="#section-3" class="anchor">teachers</a></li>
+                    <li><i class="fas fa-book-open"></i><a href="#section-4" class="anchor">subject</a></li>
+                    <li><i class="fas fa-microscope"></i><a href="#section-5" class="anchor">equipments</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- header ends -->
+
+		<div class="content">
+            <div class="content-tab">
+                <section class="tab current-section" id="section-1">
+                    <div class="info-box">
+                        <div class="box">
+                        <h3>personal information</h3>
+                        <p>Name: john</p>
+                        <p>qualification: msc</p>
+                        <p>username: </p>
+                        <p>gender: </p>
+                        <p>DOB: </p>
+                    </div>
+                    <div class="box">
+                        <h3>contact detail</h3>
+                        <p>phone: </p>
+                        <p>email: </p>
+                        <p>address: </p>
+                    </div>
+                    <div class="box">
+                        <h3>parent detail</h3>
+                        <p>father</p>
+                        <p>mother</p>
+                    </div>
+                    </div>
+                    <div class="widget-box">
+                        <div class="widget">
+                            <div class="left">
+                                <h5>total</h5>
+                                <h3>Students</h3>
+                            </div>
+                            <div class="right">
+                                <label>100</label>
+                            </div>
+                        </div>
+                         <div class="widget">
+                            <div class="left">
+                                <h5>total</h5>
+                                <h3>teachers</h3>
+                            </div>
+                            <div class="right">
+                                <label>100</label>
+                            </div>
+                        </div>
+                         <div class="widget">
+                            <div class="left">
+                                <h5>total</h5>
+                                <h3>Subjects</h3>
+                            </div>
+                            <div class="right">
+                                <label>100</label>
+                            </div>
+                        </div>
+                         <div class="widget">
+                            <div class="left">
+                                <h5>total</h5>
+                                <h3>passout</h3>
+                            </div>
+                            <div class="right">
+                                <label>100</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="tab" id="section-2">
+                    <div class="widget-box">
+                        <div class="widget">
+                            <div class="left">
+                                <h5>total</h5>
+                                <h3>Students</h3>
+                            </div>
+                            <div class="right">
+                                <label>100</label>
+                            </div>
+                        </div>
+                         <div class="widget">
+                            <div class="left">
+                                <h5>total</h5>
+                                <h3>teachers</h3>
+                            </div>
+                            <div class="right">
+                                <label>100</label>
+                            </div>
+                        </div>
+                         <div class="widget">
+                            <div class="left">
+                                <h5>total</h5>
+                                <h3>Subjects</h3>
+                            </div>
+                            <div class="right">
+                                <label>100</label>
+                            </div>
+                        </div>
+                         <div class="widget">
+                            <div class="left">
+                                <h5>total</h5>
+                                <h3>passout</h3>
+                            </div>
+                            <div class="right">
+                                <label>100</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="tab" id="section-3">
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <th>#</th>
+                                <th>photo</th>
+                                <th>first name</th>
+                                <th>address</th>
+                                <th>email</th>
+                                <th>user name</th>
+                                <th>password</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="img/me.jpg" width="100px" alt=""></td>
+                                    <td>onwe</td>
+                                    <td>amechi</td>
+                                    <td>$gnm</td>
+                                    <td>bpsco</td>
+                                    <td>12222</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="img/meek.jpg" width="100px" alt=""></td>
+                                    <td>onwe</td>
+                                    <td>amechi</td>
+                                    <td>$gnm</td>
+                                    <td>bpsco</td>
+                                    <td>12222</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="img/vincet.jpg" width="100px" alt=""></td>
+                                    <td>onwe</td>
+                                    <td>amechi</td>
+                                    <td>$gnm</td>
+                                    <td>bpsco</td>
+                                    <td>12222</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="img/victor.jpg" width="100px" alt=""></td>
+                                    <td>onwe</td>
+                                    <td>amechi</td>
+                                    <td>$gnm</td>
+                                    <td>bpsco</td>
+                                    <td>12222</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="img/jide.jpg" width="100px"alt=""></td>
+                                    <td>onwe</td>
+                                    <td>amechi</td>
+                                    <td>$gnm</td>
+                                    <td>bpsco</td>
+                                    <td>12222</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="tab" id="section-4">444</section>
+                <section class="tab" id="section-5">555</section>
+            </div>
+        </div>
+		<div class="footer"></div>
+    </div>
+    <script src="tut.js"></script>
+</body>
+</html>
